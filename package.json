@@ -1,0 +1,23 @@
+{
+  "name": "nosql-social-network-api",
+  "version": "1.0.0",
+  "description": "Coding Boot Camp week 18 challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TRN10/NoSQL-Social-Network-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TRN10/NoSQL-Social-Network-API/issues"
+  },
+  "homepage": "https://github.com/TRN10/NoSQL-Social-Network-API#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.5"
+  }
+}
