@@ -15,4 +15,8 @@ const reactionSchema = new Schema(
             timestamps: true,
         }
     }
-)
+);
+
+const Reaction = model('reaction', reactionSchema);
+
+module.exports = Reaction;

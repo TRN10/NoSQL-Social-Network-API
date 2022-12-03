@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const thoughtsSchema = require('./Thought');
 
 const validateEmail = function (email) {
     var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -17,11 +18,11 @@ const userSchema = new Schema(
             type: String,
             required: true,
             unique: true,
-            validate: [validateEmail, 'Please fill a valid email address'],
-            match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
+            validate: [validateEmail, 'Please enter a valid email address'],
+            match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please enter a valid email address']
         },
         thoughts: [thoughtsSchema],
-        friends: [friendsSchema]
+        friends: [friendsSchema],
     },
     {
         toJSON: {
