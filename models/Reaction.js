@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose');
 const reactionSchema = new Schema(
     {
         reactionId: {
-            //to be completed
+            type: Schema.Types.ObjectId,
         },
         reactionBody: {
             type: String,
@@ -12,11 +12,13 @@ const reactionSchema = new Schema(
         },
         username: {
             type: String,
-            timestamps: true,
-        }
-    }
+            required: true,
+        },
+
+    },
+    { timestamps: true },
 );
 
 const Reaction = model('reaction', reactionSchema);
 
-module.exports = Reaction;
+module.exports = reactionSchema;

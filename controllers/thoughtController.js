@@ -2,29 +2,29 @@ const { ObjectId } = require('mongoose').Types;
 const { User, Thought } = require('../models');
 
 module.exports = {
-    // Get all users
-    getUsers(req, res) {
-        User.find()
-            .then(async (users) => {
+    // Get all thoughts
+    getThoughts(req, res) {
+        Thought.find()
+            .then(async (thoughts) => {
                 const userObj = {
-                    users,
+                    thoughts,
                 };
-                return res.json(userObj);
+                return res.json(thoughtObj);
             })
             .catch((err) => {
                 console.log(err);
                 return res.status(500).json(err);
             });
     },
-    // Get a single user
-    getSingleUser(req, res) {
-        User.findOne({ _id: req.params.userId })
+    // Get a single thought
+    getSingleThought(req, res) {
+        User.findOne({ _id: req.params.thoughtId })
             .select('-__v')
-            .then(async (user) =>
-                !user
-                    ? res.status(404).json({ message: 'No user found with that ID' })
+            .then(async (thought) =>
+                !thought
+                    ? res.status(404).json({ message: 'No thought found with that ID' })
                     : res.json({
-                        user,
+                        thought,
                     })
             )
             .catch((err) => {
@@ -32,16 +32,16 @@ module.exports = {
                 return res.status(500).json(err);
             });
     },
-    // create a new user
-    createUser(req, res) {
-        User.create(req.body)
-            .then((user) => res.json(user))
+    // create a new thought
+    createThought(req, res) {
+        Thought.create(req.body)
+            .then((thought) => res.json(thought))
             .catch((err) => res.status(500).json(err));
     },
-    // delete a user
-    deleteUser(req, res) {
+    // delete a thought
+    deleteThought(req, res) {
         User.findOneAndRemove({ _id: req.params.userId })
-            .then((user) => res.json(user))
+            .then((thought) => res.json(thought))
             .catch((err) => res.status(500).json(err));
     },
 };
