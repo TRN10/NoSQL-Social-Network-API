@@ -2,11 +2,11 @@ const { ObjectId } = require('mongoose').Types;
 const { User, Thought } = require('../models');
 
 module.exports = {
-    // Get all thoughts
-    getThoughts(req, res) {
+    // Get all thoughts 
+    getThought(req, res) {
         Thought.find()
             .then(async (thoughts) => {
-                const userObj = {
+                const thoughtObj = {
                     thoughts,
                 };
                 return res.json(thoughtObj);
@@ -18,7 +18,7 @@ module.exports = {
     },
     // Get a single thought
     getSingleThought(req, res) {
-        User.findOne({ _id: req.params.thoughtId })
+        Thought.findOne({ _id: req.params.thoughtId })
             .select('-__v')
             .then(async (thought) =>
                 !thought
