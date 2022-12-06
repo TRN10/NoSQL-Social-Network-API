@@ -21,7 +21,12 @@ const userSchema = new Schema(
             validate: [validateEmail, 'Please enter a valid email address'],
             match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please enter a valid email address']
         },
-        thoughts: [thoughtSchema],
+        thoughts: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'thought',
+            },
+        ],
         friends: [{ type: mongoose.Schema.ObjectId, ref: 'userSchema' }],
     },
     {

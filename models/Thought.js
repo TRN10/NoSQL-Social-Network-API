@@ -20,6 +20,7 @@ const thoughtSchema = new Schema(
     {
         toJSON: {
             getters: true,
+            virtuals: true,
         },
         timestamps: true,
     }
@@ -27,4 +28,4 @@ const thoughtSchema = new Schema(
 
 const Thought = model('thought', thoughtSchema);
 
-module.exports = thoughtSchema;
+module.exports = Thought;
