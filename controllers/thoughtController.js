@@ -40,8 +40,31 @@ module.exports = {
     },
     // delete a thought
     deleteThought(req, res) {
-        User.findOneAndRemove({ _id: req.params.userId })
+        Thought.findOneAndDelete({ _id: req.params.thoughtId })
             .then((thought) => res.json(thought))
             .catch((err) => res.status(500).json(err));
     },
+
+    addReaction(req, res) {
+        Thought.findByIdAndUpdate(req.params.thoughtId,
+            {
+                $addToSet: { reactions: req.body }
+            }, {
+            new: true
+        })
+            .then((thought) => res.json(thought))
+            .catch((err) => { console.log(err); res.status(500).json(err) });
+    },
+
+    deleteReaction(req, res) {
+        Thought.findByIdAndUpdate(req.params.thoughtId,
+            {
+                $pull: { reactions: { reactionId: req.params.reactionId } }
+            }, {
+            new: true
+        })
+            .then((thought) => res.json(thought))
+            .catch((err) => res.status(500).json(err));
+
+    }
 };
