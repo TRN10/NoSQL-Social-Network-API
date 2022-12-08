@@ -6,9 +6,7 @@ This is an API for a social network web application. The application's users can
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [Licenses](#licenses)
-- [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
 
 ### Installation
@@ -17,11 +15,7 @@ As this is a back end application the user needs to use terminal to  do an NPM  
 
 ### Usage
 
-this application provides the required routes to the Mongo database in order  to   create, update and delete  users , thoughts and reactions
-
-### Credits
-
-
+This application provides the routes required by the front end to the Mongo database in order to create/read/update and delete users, thoughts and reactions.
 
 ### Licenses
 
@@ -37,14 +31,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ---
 
-### How to Contribute
-
-
-
-### Tests
-
-
-
 If you have any questions regarding this application, please email: trentanjurkans@gmail.com  
 
 Below is a screenshot of the application:
@@ -52,8 +38,10 @@ Below is a screenshot of the application:
 
 ##### The repository for this application can be found at: 
 
-'https://github.com/TRN10'
+https://github.com/TRN10/NoSQL-Social-Network-API
 
-##### The deployed application can be found at: 
+##### A video demonstrating the routes can be found at: 
+
+https://drive.google.com/file/d/1ndq9djODAWRjSNhZsySeZ9abE6wEluBR/view
 
 
