@@ -1,2 +1,59 @@
-# NoSQL-Social-Network-API
-Coding Boot Camp week 18 challenge
+# NoSQL Social Network API [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+### Description
+
+This is an API for a social network web application. The application's users can share thoughts, react to others thoughts and create a friend list. The application uses a MongoDB databaseandthe Mongosose ODM
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Licenses](#licenses)
+- [How to Contribute](#how-to-contribute)
+- [Tests](#tests)
+
+### Installation
+
+As this is a back end application the user needs to use terminal to  do an NPM  install and then initiate  the app by typing  the command "node index.js" in the termminal
+
+### Usage
+
+this application provides the required routes to the Mongo database in order  to   create, update and delete  users , thoughts and reactions
+
+### Credits
+
+
+
+### Licenses
+
+Copyright 2022 Trentan Jurkans
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+      The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[MIT License](https://opensource.org/licenses/MIT)
+
+
+---
+
+### How to Contribute
+
+
+
+### Tests
+
+
+
+If you have any questions regarding this application, please email: trentanjurkans@gmail.com  
+
+Below is a screenshot of the application:
+![NoSQL Social Network API-screenshot]()
+
+##### The repository for this application can be found at: 
+
+'https://github.com/TRN10'
+
+##### The deployed application can be found at: 
+
+
