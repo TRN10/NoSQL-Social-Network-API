@@ -11,11 +11,11 @@ This is an API for a social network web application. The application's users can
 
 ### Installation
 
-As this is a back end application the user needs to use terminal to  do an NPM  install and then initiate  the app by typing  the command "node index.js" in the termminal
+As this is a back end application the user needs to use terminal to do an NPM install and then initiate the app by typing the command "node index.js" in the terminal. The message "mongoose has successfully connected API server running on port 3001!" will be displayed in the terminal when the application is initialised successfully.
 
 ### Usage
 
-This application provides the routes required by the front end to the Mongo database in order to create/read/update and delete users, thoughts and reactions.
+This application provides the routes which would be required by the front-end  in order to connect to the Mongo database in order to create/read/update and delete users, thoughts and reactions.
 
 ### Licenses
 
