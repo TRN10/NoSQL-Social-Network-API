@@ -2,7 +2,7 @@
 
 ### Description
 
-This is an API for a social network web application. The application's users can share thoughts, react to others thoughts and create a friend list. The application uses a MongoDB databaseandthe Mongosose ODM
+This is an API for a social network web application. The application's users can share thoughts, react to others thoughts and create a friend list. The application uses a MongoDB database and the Mongosose ODM.
 
 - [Installation](#installation)
 - [Usage](#usage)
