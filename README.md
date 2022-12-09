@@ -33,8 +33,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 If you have any questions regarding this application, please email: trentanjurkans@gmail.com  
 
-Below is a screenshot of the application:
-![NoSQL Social Network API-screenshot]()
 
 ##### The repository for this application can be found at: 
 
